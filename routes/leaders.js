@@ -19,6 +19,7 @@ dishRouter.route('/')
     })
     .post(function (req, res) {    //To create new resource
         var dish = new Dishes(req.body);
+        
         dish.save()
             .then((dish) => {
                 console.log('Dish Created ', dish);
