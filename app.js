@@ -14,7 +14,7 @@ var dishes = require('./routes/dishes');
 
 var app = express();
 
-const url = 'mongodb://localhost:27017/cvrestaurant';  //To connect to database
+const url = 'mongodb://akshay:akshay02167@ds157282.mlab.com:57282/cvdhaba';  //To connect to database
 const connect = mongoose.connect(url);
 
 connect.then((db) => {
